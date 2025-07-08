@@ -1,5 +1,5 @@
 /*
-    Last Modified: 2025-07-07 05:55
+    Last Modified: 2025-07-08 09:35
     Author: Maxim
     Contact: https://www.maxim.pe.kr
     License: © 2025 Maxim. All Rights Reserved.
@@ -23,7 +23,13 @@ const languages = {
         'products_02_price_1_value': '$38',
         'products_02_price_2_value': '$65',
         'products_03_price_1_value': '$32',
-        'products_03_price_2_value': '$55'
+        'products_03_price_2_value': '$55',
+        'interview_01_name': 'Sarah',
+        'interview_01_job': 'News Anchor',
+        'interview_02_name': 'Emily',
+        'interview_02_job': 'Sommelier',
+        'interview_ceo_name': 'Chloe Kim',
+        'interview_ceo_job': 'CEO'
     },
     // 그룹: 언어 팩 - 영어
     'en': {
@@ -94,8 +100,9 @@ const languages = {
         'promotion_01_benefit_01': '15% off all programs on your first visit',
         'promotion_01_benefit_02': 'Both get 10% off when a friend you referred visits',
         'promotion_01_benefit_03': 'Receive an organic oil sample for referrals',
-        'interview_01_title': 'Sarah <span class="review-from">News Anchor</span>',
-        'interview_02_title': 'Emily <span class="review-from">Sommelier</span>',
+        'interviews_title': 'Interview',
+        'interviews_desc': 'Listen to the genuine stories of our clients and the message from our CEO, who leads ANDAR with a special philosophy.',
+        'interview_ceo_script': '"Hello. This is Chloe Kim, CEO of Andar. We will always do our best for your health and beauty."',
         'interview_01_script': '"My daily news anchoring often left me with a tense neck and shoulders. Andar\'s aroma therapy was more than just a massage; it brought deep tranquility to my body and mind. The personalized oil blend felt like my own private sanctuary. Incorporating Andar visits into my demanding broadcast schedule has become an essential part of my routine. If you\'re seeking true relaxation in your busy life, I wholeheartedly recommend Andar for a profound sense of peace and renewal."',
         'interview_02_script': '"As a sommelier, discerning subtle aromas is my life\'s work. Yet, long hours of intense focus can be utterly exhausting. Andar\'s deep tissue massage meticulously eased my tense muscles, and the natural fragrances provided a profound sense of peace, as if I were immersed in a serene forest. The therapist\'s expert touch seemed to understand my body\'s subtle signals even before I did. Just as I select the finest wines, Andar delivered perfect rejuvenation with their exceptional service. For those who appreciate true sensory experiences, Andar\'s wellness offers an unparalleled choice for rejuvenation."'
     },
@@ -168,6 +175,9 @@ const languages = {
         'promotion_01_benefit_01': '첫 방문 시, 모든 프로그램 15% 할인',
         'promotion_01_benefit_02': '친구 추천 시, 추천인과 친구 모두 10% 추가 할인',
         'promotion_01_benefit_03': '추천으로 등록 시, 유기농 오일 샘플 증정',
+        'interviews_title': '인터뷰',
+        'interviews_desc': '안다르를 이끄는 대표의 특별한 철학과 고객들의 진솔한 목소리를 함께 들어보세요.',
+        'interview_ceo_script': '"안녕하세요. Andar 대표 클로이 킴입니다. 여러분의 건강과 아름다움을 위해 언제나 최선을 다하겠습니다."',
         'interview_01_script': '"매일 뉴스를 진행하며 긴장된 목과 어깨는 저의 고질병이었죠. 안다르의 아로마 테라피는 단순한 마사지를 넘어, 몸과 마음에 깊은 평온을 선사했습니다. 저에게 맞춰 블렌딩된 오일 향은 마치 저만을 위한 휴식처 같았어요. 바쁜 방송 스케줄 속 안다르 방문은 이제 저의 필수 루틴입니다. 지친 일상 속 진정한 쉼을 찾는다면, 안다르를 강력히 추천합니다."',
         'interview_02_script': '"와인 소믈리에로서 섬세한 향을 감별하는 일은 저의 삶이죠. 하지만 긴 시간 집중하는 일은 몸을 지치게 합니다. 안다르의 딥티슈 마사지는 뭉친 근육을 섬세하게 풀어주었고, 자연의 향기는 깊은 평온을 선사했어요. 테라피스트의 전문적인 손길은 제 몸의 미세한 신호까지 읽어주는 듯했습니다. 최고의 와인을 선별하듯, 안다르는 최고의 서비스로 저에게 완벽한 재충전을 선물했습니다. 섬세한 감각을 지닌 당신께, 안다르의 웰니스는 최고의 선택이 될 겁니다."'
     }

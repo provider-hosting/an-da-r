@@ -225,7 +225,6 @@
 
         <section id="promotion" class="section fade-in-section">
             <div class="container">
-                 <h2><span class="material-symbols-outlined">campaign</span><span data-lang="promotion_title"></span></h2>
                  <div class="card-grid grid-1">
                      <div class="ui-card horizontal">
                          <div class="ui-card-image-wrapper">
@@ -245,12 +244,15 @@
 
         <section id="interviews" class="section fade-in-section">
             <div class="container">
-                <h2><span class="material-symbols-outlined">star</span><span data-lang="reviews_title"></span></h2>
+                <h2><span class="material-symbols-outlined">star</span><span data-lang="interviews_title"></span></h2>
+                <p class="section-description" data-lang="interviews_desc"></p>
+
+                <!-- Customer Reviews -->
                 <div class="card-grid grid-2">
                     <div class="ui-card">
                         <img src="./section/interviews/01.jpg" alt="Influencer Sarah Chen" class="ui-card-image">
                         <div class="ui-card-content">
-                            <h3 class="ui-card-title render-as-html" data-lang="interview_01_title"></h3>
+                            <h3 class="ui-card-title"><span data-lang="interview_01_name"></span><span class="review-from" data-lang="interview_01_job"></span></h3>
                             <p class="ui-card-description" data-lang="interview_01_script"></p>
                             <audio controls src="./section/interviews/01.mp4">Your browser does not support the audio element.</audio>
                         </div>
@@ -258,23 +260,23 @@
                     <div class="ui-card">
                         <img src="./section/interviews/02.jpg" alt="Influencer Emily Watson" class="ui-card-image">
                         <div class="ui-card-content">
-                            <h3 class="ui-card-title render-as-html" data-lang="interview_02_title"></h3>
+                            <h3 class="ui-card-title"><span data-lang="interview_02_name"></span><span class="review-from" data-lang="interview_02_job"></span></h3>
                             <p class="ui-card-description" data-lang="interview_02_script"></p>
                             <audio controls src="./section/interviews/02.mp4">Your browser does not support the audio element.</audio>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="greeting" class="section fade-in-section">
-            <div class="container">
-                <h2><span class="material-symbols-outlined">nature_people</span><span data-lang="greeting_title"></span></h2>
-                <div class="card-grid grid-1">
+
+                <!-- CEO's Message -->
+                <div class="card-grid grid-1" style="margin-top: 30px;">
                     <div class="ui-card">
-                        <video class="ui-card-video" controls poster="./section/greeting/01.jpg" src="./section/greeting/01.mp4">
+                        <video class="ui-card-video" poster="./section/interviews/ceo.jpg" src="./section/interviews/ceo.mp4" controls>
                             Your browser does not support the video element.
                         </video>
+                        <div class="ui-card-content">
+                            <h3 class="ui-card-title"><span data-lang="interview_ceo_name"></span><span class="review-from" data-lang="interview_ceo_job"></span></h3>
+                            <p class="ui-card-description" data-lang="interview_ceo_script"></p>
+                        </div>
                     </div>
                 </div>
             </div>
