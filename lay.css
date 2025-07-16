@@ -1,5 +1,5 @@
 /*
-Last Modified: 2025-07-02 18:12
+Last Modified: 2025-07-16 13:10
 Contact Us: https://www.maxim.pe.kr
 © 2025 Maxim. All Rights Reserved.
 */
@@ -13,7 +13,7 @@ Contact Us: https://www.maxim.pe.kr
     --color-text-strong: #3B3B3B; /* Dark Gray */
     --color-text-default: #5E5E5E;
     --color-text-soft: #808080;
-    --color-text-meta: #9E9E9E; /* 옅은 메타 정보용 색상 추가 */
+    --color-text-meta: #9E9E9E;
     --color-surface-primary: #FFFFFF;
     --color-surface-secondary: #F5F3F0; /* Warm, Light Beige */
     --color-surface-subtle: #EAE7E2;
@@ -57,7 +57,7 @@ Contact Us: https://www.maxim.pe.kr
     --text-cta-button: var(--color-text-on-accent);
     --text-offer-badge: #FFFFFF;
     --price-value-setup-color: var(--color-accent-secondary);
-    --text-job-title: var(--color-text-meta); /* 직책용 텍스트 색상 매핑 */
+    --text-job-title: var(--color-text-meta);
 
     --border-card: var(--color-border-subtle);
     --border-navbar-bottom: rgba(0, 0, 0, 0.07);
@@ -76,15 +76,15 @@ Contact Us: https://www.maxim.pe.kr
 @media (prefers-color-scheme: dark) {
     :root {
         /* 1. Dark Mode Palette */
-        --color-accent-primary: #81A8A7; /* Brighter Green for contrast */
+        --color-accent-primary: #81A8A7;
         --color-accent-primary-hover: #95BDBB;
-        --color-accent-secondary: #D7B99D; /* Brighter Gold */
+        --color-accent-secondary: #D7B99D;
         --color-text-strong: #F1F1F0;
         --color-text-default: #D4D2CF; 
         --color-text-soft: #A3A09C;
-        --color-text-meta: #BDBDBD; /* 옅은 메타 정보용 색상 추가 (다크 모드) */
-        --color-surface-primary: #2C2A28; /* Dark, Warm Brown-Gray */
-        --color-surface-secondary: #1F1D1B; /* Deeper Dark, Warm Brown-Gray */
+        --color-text-meta: #BDBDBD;
+        --color-surface-primary: #2C2A28;
+        --color-surface-secondary: #1F1D1B;
         --color-surface-subtle: #413E3B;
         --color-border-subtle: #413E3B;
         --color-text-on-accent: #1F1D1B;
@@ -123,7 +123,7 @@ Contact Us: https://www.maxim.pe.kr
         --text-cta-button: var(--color-text-on-accent);
         --text-offer-badge: var(--color-background-dark);
         --price-value-setup-color: var(--color-accent-secondary);
-        --text-job-title: var(--color-text-meta); /* 직책용 텍스트 색상 매핑 (다크 모드) */
+        --text-job-title: var(--color-text-meta);
 
         --border-card: var(--color-border-subtle);
         --border-navbar-bottom: rgba(255, 255, 255, 0.09);
@@ -138,25 +138,26 @@ Contact Us: https://www.maxim.pe.kr
 }
 
 #home .content h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
-    letter-spacing: 0.3em;
-    margin-left: 0.3em;
-    text-transform: uppercase;
-    color: var(--text-on-accent);
+    letter-spacing: 0.2em;
+    margin-left: 0.2em;
+    text-transform: capitalize;
+    color: #FFFFFF; /* 항상 밝은 색상으로 고정 */
     text-shadow: 2px 2px 8px var(--shadow-home-text);
-    font-size: clamp(3rem, 2rem + 8vw, 9rem);
+    font-size: clamp(3.5rem, 2rem + 8vw, 10rem);
 }
 
 #home .content .subtitle {
     font-size: 1.3rem;
+    color: #FFFFFF; /* h1과 통일성을 위해 밝은 색상으로 고정 */
 }
 
 .review-from {
     display: block;
     font-weight: 300;
-    font-size: 0.8em; /* 이름보다 작게 조정 */
-    color: var(--text-job-title); /* 더 옅은 색으로 변경 */
+    font-size: 0.8em;
+    color: var(--text-job-title);
 }
 
 #interviews .ui-card-description,
@@ -186,7 +187,6 @@ Contact Us: https://www.maxim.pe.kr
     color: var(--price-value-setup-color);
 }
 
-/* --- 오디오 플레이어 위치 고정을 위한 레이아웃 수정 --- */
 #interviews .ui-card {
     display: flex;
     flex-direction: column;
@@ -202,10 +202,19 @@ Contact Us: https://www.maxim.pe.kr
     margin-top: auto;
 }
 
-/* --- 상세 정보 리스트 스타일 --- */
 .ui-card-content .ui-benefit-list {
     text-align: left;
     margin-top: 20px;
     font-size: 0.9rem;
     color: var(--text-secondary);
+}
+
+/* --- Floating Light Particles Background --- */
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
